@@ -30,18 +30,14 @@ from resources.lib.libraries import workers
 from resources.lib.libraries import views
 
 
-phLink = 'http://mecca.watchkodi.com/phstreams.xml'
-phNews = 'http://mecca.watchkodi.com/news.xml'
+phLink = 'http://watchkodi.dragutincirkovic.info/streams.xml'
+phNews = 'http://watchkodi.dragutincirkovic.info/news.xml'
 phSearch = 'http://%s/search/search.xml'
 phTest = 'testings.xml'
 
 
 def getCategory():
     getDirectory('0', phLink, '0', '0', '0', '0', '0', close=False)
-    addCategoryItem('VinMan FM', 'radioDirectory', 'radios.png')
-    addCategoryItem('Cartoon Crazy','CartoonDirectory','cartoon.png')
-    addCategoryItem('NHL', 'nhlDirectory', 'hockey.jpg')
-    addCategoryItem('News Updates', 'dmode&url=%s' % phNews, 'news.gif')
     addCategoryItem(control.lang(30701).encode('utf-8'), 'openSettings', 'settings.png')
     addCategoryItem(control.lang(30721).encode('utf-8'), 'downloader', 'downloader.png')
     addCategoryItem(control.lang(30702).encode('utf-8'), 'search', 'search.png')

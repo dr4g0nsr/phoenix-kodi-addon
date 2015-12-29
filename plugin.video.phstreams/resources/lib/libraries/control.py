@@ -108,7 +108,7 @@ cacheFile = os.path.join(dataPath, 'cache.db')
 def addonIcon():
     appearance = setting('appearance').lower()
     if appearance in ['-', '']: return addonInfo('icon')
-    else: return os.path.join(addonPath, 'resources', 'media', appearance, 'icon.png')
+    else: return os.path.join(addonPath, 'resources', 'media', appearance, 'icon.jpg')
 
 
 def addonPoster():
